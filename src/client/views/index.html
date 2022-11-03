@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/src/client/views/5968322.png">
+        <title>Weather Journal App</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="log-in">
+                <a href="#">Logo</a>
+            </div>
+            <div class="na-in">
+                <a href="#">Navigation</a>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name" class="inpt-fl">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)" class="btn-fl">
+                </form>
+            <section>
+
+            <section class="results-list">
+                <h4>Form Results:</h4>
+                <ul id="results">
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            Made by Gani @ 2022-11-3 <code style="font-size: 15px;">Node.js-Express-webpack</code>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator){
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                })
+            }
+        </script>
+    </body>
+</html>
