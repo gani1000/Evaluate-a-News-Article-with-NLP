@@ -1,4 +1,4 @@
-Requirments to run the server:
+Requirments to run the application:
 
 1- `npm install` install dependencies required
 
